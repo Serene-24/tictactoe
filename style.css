@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(254, 152, 152);
+    color: whitesmoke;
+    display: block;
+    position: fixed;
+    top: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li{
+    font-family: 'Rubik Vinyl', cursive;    padding: 1vh;
+    font-size: 2em;
+}
+
+.gameContainer{
+    background-color: rgb(251, 175, 175);
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 11vw);
+    grid-template-rows: repeat(3, 11vw);
+    padding-left: 20vh;
+}
+
+
+.gameInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20vw;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.turntext{
+    font-size: 3em;
+    padding: 20px 10px;
+}
+
+
+.score{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.scoreX h2, .score0 h2{
+    display: inline-block;
+}
+
+.scoreX, .score0{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.scoreXvalue, .score0value{
+    font-size: 1.5em;
+    padding: 10px 10px;
+}
+
+.winnerGIF{
+    flex: 2;
+    width: 0vw;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+   background-color: rgb(251, 149, 149); 
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+
+
+#resetBtn, .resetScoreBtn{
+    margin: 10px 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color:rgb(251, 149, 149);
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.resetScoreBtn{
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+#resetBtn:hover, .resetScoreBtn:hover{
+    background-color: rgb(251, 124, 124);
+}
+
+#resetBtn:active, .resetScoreBtn:active{
+    opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+        padding-left: 10vh;
+        padding-top: 5vh;
+    }
+
+    .turntext{
+        font-size: 2.5em;
+        font-weight: bolder;
+       
+    }
+}
+
+@media (max-width: 500px){
+    .container {
+        width: 100%;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        padding-left: 10vh;
+}
+}
