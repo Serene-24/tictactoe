@@ -38,7 +38,6 @@ nav ul li{
     min-height: 100%;
     min-width: 100%;
     align-items: center;
-    margin-top: 50px;
 }
 
 .container{
@@ -164,5 +163,6 @@ nav ul li{
         grid-template-columns: repeat(3, 20vw);
         grid-template-rows: repeat(3, 20vw);
         padding-left: 10vh;
+        padding-top: 5vh;
 }
 }

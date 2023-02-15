@@ -26,7 +26,7 @@ const checkWin = ()=>{
             isgameover = true
             document.querySelector('.turntext').innerText = boxtexts[e[0]].innerText + " Won"
             gameOver.play()
-            document.querySelector('.winnerGIF').style.width = "30vh";
+            document.querySelector('.winnerGIF').style.width = "15vh";
 
             if (boxtexts[e[0]].innerText === "X"){
                 curr = Number(document.querySelector('.scoreXvalue').innerText)
