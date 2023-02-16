@@ -28,6 +28,8 @@ const checkWin = ()=>{
             gameOver.play()
             document.querySelector('.winnerGIF').style.width = "15vh";
 
+            //adjust the scores
+
             if (boxtexts[e[0]].innerText === "X"){
                 curr = Number(document.querySelector('.scoreXvalue').innerText)
                 document.querySelector('.scoreXvalue').innerText = curr + 1
@@ -45,6 +47,7 @@ const checkWin = ()=>{
 let boxes = document.getElementsByClassName("box")
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxtext')
+    //when any box is clicked
     element.addEventListener('click', ()=>{
         if(boxtext.innerText === '' && !isgameover){
             click.play()
